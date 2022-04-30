@@ -1,27 +1,22 @@
+# learningDjango
 Django를 배우는 이유 : 과제에서 백엔드로 Django가 채택되었기 때문이다.
 
-개인적으로는 책을 통해 배우는 것을 선호해서, 이번에도 책을 사볼까 했는데 이해하기 어려워서 그만두었다.
+개인적으로는 책을 통해 배우는 것을 선호해서, 이번에도 책을 사볼까 했는데 이해하기 어려워서 그만두었다. 
+
 구체적인 설명보다는 이런식으로 한 번 작성해보세요! 이렇게 되죠? 이런 느낌이였어서 원하는 것을 얻기가 어려웠다.
 
 그래서 차라리 빠르게 인강을 보면서 배우는 것이 좋을 것 같다는 판단이 들어, 
-<Build REST APIs with Django REST Framework and Python> 라는 강의를 Udemy에서 구입했다.
 
-2022년 4월 28일 ~section 3
-node.js/mongoDB를 위주로 공부했기 때문에 그와 비교하면서 적어보려고 한다.
-강의를 보면서 느낀 것을 작성할 것이기에 오류가 존재할 수 있다. 
+Build REST APIs with Django REST Framework and Python 라는 강의를 Udemy에서 구입했다.
 
-node.js/mongoDBを主に勉強したからそれと比べて作成しようと思う。
+### <b>2022/4/28 ~section 3</b>
+
+node.js/mongoDBを主に勉強したからそれと比べて作成しようと思う。<br>
 講義を見ながら感じたものを作成する予定なので不確定な情報があるかもしれない。
 
-작업환경
-
-가상환경 - 가상환경이 만들어진 폴더 밖에다가 작업할 폴더 생성
-
-models.py - 데이터 스키마를 만드는 듯하다.　このページでデータスキマを作る。
-urls.py - router.get('/',(req,res)=>{}) 에서 url을 설정하는 것처럼, 이 페이지에서 세부적인 url을 설정할 수 있다.
-このページで細かいURLを設定できる。
-views.py - router.get('/',(req,res)=>{ 여기에 들어가는 내용들이 views.py에 해당하는 것 같다.　ここに入る内容がこのページに当たる。})
-외부에 있는 urls.py 는 node.js 프로젝트에서 app.js 에 들어가는 url에 해당한다. 토대 같아보인다. 
+models.py - このページでデータスキマを作る。<br>
+urls.py - router.get('/',(req,res)=>{}) このページで細かいURLを設定できる。<br>
+views.py - router.get('/',(req,res)=>{ ここに入る内容がこのページに当たる。})<br>
 外部にあるurls.pyには、node.jsプロジェクトのapp.jsで設定できる基本urlに該当する。
 
 
