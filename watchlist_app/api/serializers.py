@@ -1,8 +1,16 @@
 ## map all the value 
 from rest_framework import serializers
-from watchlist_app.models import WatchList,StreamPlatform
+from watchlist_app.models import Review, WatchList,StreamPlatform
+
+class ReviewSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Review
+        exclude=('watchlist',)
+       #fields ="__all__"
+       
 
 class WatchListSerializer(serializers.ModelSerializer):
+    reviews = ReviewSerializer(many=True, read_only=True)
     # new extra field 
     #len_name=serializers.SerializerMethodField()
     class Meta:
@@ -28,6 +36,7 @@ class StreamPlatformSerializer(serializers.ModelSerializer):
     class Meta:
         model = StreamPlatform
         fields="__all__"
+
 
 # def name_length(value):
 #     if len(value)<2:
